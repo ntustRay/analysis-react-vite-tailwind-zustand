@@ -8,10 +8,10 @@ const Header = () => {
     <header className="w-full h-16 flex-shrink-0 bg-white shadow-md flex items-center relative">
       <div className="ml-8 flex items-center">
         <img className="h-6 w-6 mr-3" src={headerIcon} alt="header-icon" />
-        <span className="text-black font-sans text-2xl font-normal leading-normal">
+        <span className="text-black text-2xl font-normal leading-none">
           Analysis
         </span>
-        <span className="text-black/60 font-sans text-base font-normal leading-normal">
+        <span className="text-black/60 text-base font-normal leading-none">
           .dev
         </span>
       </div>

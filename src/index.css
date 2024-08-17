@@ -9,3 +9,7 @@ main {
 body {
   font-family: Arial, sans-serif;
 }
+
+input[type="text"] {
+  outline: none;
+}

@@ -7,7 +7,7 @@ const Sidebar = () => {
   const [selected, setSelected] = useState("/");
 
   const getSelectedStyle = (path) => {
-    return selected === path ? 'text-[rgba(0,0,0,0.87)] bg-customBlue border-r-4 border-[#16538E]' : 'text-[rgba(0,0,0,0.4)]';
+    return selected === path ? 'text-[rgba(0,0,0,0.87)] bg-navLightBlue border-r-4 border-themeBlue' : 'text-[rgba(0,0,0,0.4)]';
   };
 
   return (
