@@ -5,6 +5,10 @@ import locationIcon from '../../assets/location.svg';
 import humidityIcon from '../../assets/humidity.svg';
 import temperatureIcon from '../../assets/temperature.svg';
 import {getTimeInTimezone} from '../../utils/utils';
+import clearDayIcon from '../../assets/clear-day.svg';
+import cloudyIcon from '../../assets/cloudy.svg';
+import rainIcon from '../../assets/rain.svg';
+import notAvailableIcon from '../../assets/not-available.svg';
 
 const WeatherPage = () => {
   const {
@@ -42,26 +46,23 @@ const WeatherPage = () => {
   const getInputStyle = (input) => inputError.includes(input) ? '!border-errorRed' : 'border';
 
   const getWeatherIcon = (weather) => {
-    const basePath = window.location.pathname.includes('github.io')
-      ? `${window.location.pathname}assets/`
-      : '/analysis-react-vite-tailwind-zustand/src/assets/';
-
-    let iconFileName = '';
+    let iconFileName;
 
     switch (weather) {
       case 'Clear':
-        iconFileName = 'clear-day.svg';
+        iconFileName = clearDayIcon;
         break;
       case 'Clouds':
-        iconFileName = 'cloudy.svg';
+        iconFileName = cloudyIcon;
         break;
       case 'Rain':
-        iconFileName = 'rain.svg';
+        iconFileName = rainIcon;
         break;
       default:
-        iconFileName = 'not-available.svg';
+        iconFileName = notAvailableIcon;
     }
-    return `${basePath}${iconFileName}`;
+
+    return iconFileName;
   }
 
 
