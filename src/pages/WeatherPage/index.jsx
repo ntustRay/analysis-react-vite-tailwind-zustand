@@ -44,7 +44,7 @@ const WeatherPage = () => {
   const getWeatherIcon = (weather) => {
     const basePath = window.location.pathname.includes('github.io')
       ? `${window.location.pathname}assets/`
-      : '/src/assets/';
+      : '/analysis-react-vite-tailwind-zustand/src/assets/';
 
     let iconFileName = '';
 
