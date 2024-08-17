@@ -21,21 +21,19 @@ The project is deployed on GitHub Pages.
 git clone https://github.com/ntustray/analysis-react-vite-tailwind-zustand.git
 cd analysis-react-vite-tailwind-zustand
 ```
-  
-### Install dependencies:
-
+2. Install dependencies:
 ```bash
 npm install
-Run the development server:
 ```
+3. Run the development server:
 ```bash
 npm run dev
-Build the project for production:
 ```
+4. Build the project for production:
 ```bash
 npm run build
-Deploy the project to GitHub Pages:
 ```
+5. Deploy the project to GitHub Pages:
 ```bash
 npm run deploy
 ```
