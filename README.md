@@ -6,6 +6,10 @@ This project is a single-page built with React, Vite, Tailwind CSS, and Zustand.
 The application is designed to provide users with real-time weather information and population growth data for Taiwan.  
 The project is deployed on GitHub Pages.
 
+### Demo Link
+
+https://ntustray.github.io/analysis-react-vite-tailwind-zustand/
+
 ## How to practice
 
 ### Prerequisites
