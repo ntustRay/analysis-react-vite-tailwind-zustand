@@ -8,6 +8,35 @@
     <link rel="icon" type="image/svg+xml" href="/analysis-react-vite-tailwind-zustand/header-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analysis.dev Weather App</title>
+    <script>
+      (() => {
+        const base = '/analysis-react-vite-tailwind-zustand/';
+        if (location.origin !== 'https://ntustray.github.io' || location.pathname !== base) return;
+        if (location.search || location.hash || navigator.doNotTrack === '1' || navigator.globalPrivacyControl) return;
+        const referrer = document.referrer ? new URL(document.referrer) : null;
+        if (referrer && (referrer.search || referrer.hash || referrer.pathname !== '/')) return;
+        const id = 'G-55GVZLB53M';
+        if (window['ga-disable-' + id]) return;
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', id, {
+          page_location: location.origin + base,
+          page_title: 'Analysis Weather App',
+          page_referrer: referrer?.origin ?? '',
+          cookie_path: base,
+          cookie_prefix: 'analysis_react_vite_tailwind_zustand',
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+        });
+        const tag = document.createElement('script');
+        tag.async = true;
+        tag.referrerPolicy = 'no-referrer';
+        tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+        document.head.append(tag);
+      })();
+    </script>
     <script type="module" crossorigin src="/analysis-react-vite-tailwind-zustand/assets/index-B1sp3Vh9.js"></script>
     <link rel="stylesheet" crossorigin href="/analysis-react-vite-tailwind-zustand/assets/index-Dd3OmboW.css">
   </head>
